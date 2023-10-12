@@ -155,6 +155,6 @@ Si hay una excepción en la aplicación se mostrará el resultado como en la sig
 La técnica de custom exceptions permite la separación entre el código de flujo de la aplicación y el código de manejo de excepciones lo que hace la aplicación cumpla con un mecanismo mínimo de calidad y sea mucho más manejable, robusta y escalable.
 </p>
 <p>
-Aqui el archivo <i>App.config</i> donde se encuentra la cadena de conexiÃ³n (ConnectionString) y  se accede a su valor mediante la siguiente lÃ­nea en la aplicaciÃ³n y se asigna a la variable <tt>connStr</tt>.
+Aqui el archivo <i>App.config</i> donde se encuentra la cadena de conexion (ConnectionString) y  se accede a su valor mediante la siguiente linea en la aplicacion y se asigna a la variable <tt>connStr</tt>.
 </p>
 <img src="Appconfig.png"/>
