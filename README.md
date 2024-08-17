@@ -101,7 +101,7 @@ Como ejemplo de estos conceptos vamos a crear una aplicación que se conecta a u
 En Monodevelop o en Visual Studio creamos una aplicación de consola, como en las siguientes imágenes.</p>
 <img src="images/postEx1.png"/>
 Creamos una base de datos en <b>PostgreSQL</b> llamada curry y una tabla llamada Books que tendrá los campos como en la siguiente imagen:
-<img src="images/tbBooks.png"/>
+<img src="images/bookstable.png"/>
 <p>
 Aquí el Script de creación de la tabla
 </p>
@@ -109,7 +109,7 @@ Aquí el Script de creación de la tabla
 <p>
 Una vez creada la base de datos y el proyecto, creamos la siguiente clase de entidad.
 </p>
-<img src="images/book.png"/>
+<img src="images/classBook.png"/>
 <p>
 Las clases derivadas y personalizadas que muestran con los constructores básicos del manejo de excepción.
 La clase que maneja las excepciones en base de datos
