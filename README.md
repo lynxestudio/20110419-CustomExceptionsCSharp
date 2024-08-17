@@ -1,4 +1,5 @@
 # Uso de Custom Exceptions (excepciones personalizadas) en .NET
+
 <p align="justify">
 Las excepciones (exceptions) son un mecanismo incorporado en .NET que ayuda a la detección de condiciones excepcionales en nuestras aplicaciones, entiéndase por condiciones excepcionales aquellas situaciones que están fuera de nuestro control y que no podemos prever como programadores, esto es distinto de los errores de código y de los errores de aplicación ya que estos si son prevenibles y manejables dentro del ciclo de desarrollo. Como ejemplos de condiciones excepcionales tenemos:
 </p>
@@ -71,7 +72,6 @@ Los pasos para crear una excepción personalizada son:
 1-. Crear una nueva clase con el sufijo Exception como una buena práctica y recomendación las clases derivadas de Exception utilizan el este sufijo.
 </p>
 <pre>
-
      class RuntimeException
      {
       }
@@ -99,62 +99,62 @@ Como ejemplo de estos conceptos vamos a crear una aplicación que se conecta a u
 </p>
 <p>
 En Monodevelop o en Visual Studio creamos una aplicación de consola, como en las siguientes imágenes.</p>
-<img src="postEx1.png"/>
+<img src="images/postEx1.png"/>
 Creamos una base de datos en <b>PostgreSQL</b> llamada curry y una tabla llamada Books que tendrá los campos como en la siguiente imagen:
-<img src="tbBooks.png"/>
+<img src="images/tbBooks.png"/>
 <p>
 Aquí el Script de creación de la tabla
 </p>
-<img src="createtablebooks.png"/>
+<img src="images/createtablebooks.png"/>
 <p>
 Una vez creada la base de datos y el proyecto, creamos la siguiente clase de entidad.
 </p>
-<img src="book.png"/>
+<img src="images/book.png"/>
 <p>
 Las clases derivadas y personalizadas que muestran con los constructores básicos del manejo de excepción.
 La clase que maneja las excepciones en base de datos
 </p>
-<img src="DataBaseException.png"/>
+<img src="images/DataBaseException.png"/>
 <p>
 La clase que maneja las excepciones de la aplicación.
 </p>
-<img src="RuntimeException.png"/>
+<img src="images/RuntimeException.png"/>
 <p>
 La clase de acceso a datos
 </p>
-<img src="BooksDataManager.png"/>
+<img src="images/BooksDataManager.png"/>
 <p>
 La clase logger que se encargara de registrar las excepciones.
 </p>
-<img src="Logger.png"/>
+<img src="images/Logger.png"/>
 <p>
 Por último la clase principal en donde usamos las excepciones personalizadas.
 </p>
-<img src="ProgramPostEx.png"/>
+<img src="images/ProgramPostEx.png"/>
 <p>
 Una vez creadas estas clases dentro del proyecto la estructura se verá más o menos así en MonoDevelop
 </p>
-<img src="postEx3.png"/>
+<img src="images/postEx3.png"/>
 <p align="justify">
 Para ejecutar este programa siendo una aplicación de consola debemos de habilitar la salida en una terminal independiente en el menú Project del menú principal elegimos la opción Project properties donde nos aparece la siguiente ventana.
 </p>
-<img src="postEx3a.png">
+<img src="images/postEx3a.png">
 <p>
 Ahí seleccionamos la opción Run on external console, ahora al ejecutar el programa el resultado se verá en una ventana terminal independiente como en la siguiente imagen que muestra el resultado sin ninguna excepción.
 </p>
-<img src="postEx5.png"/>
+<img src="images/postEx5.png"/>
 <p align="justify">
 Sin embargo si ocurre una excepción relacionada con la base de datos se mostrará la salida como en la siguiente imagen.
 </p>
-<img src="postEx6.png"/>
+<img src="images/postEx6.png"/>
 <p>
 Si hay una excepción en la aplicación se mostrará el resultado como en la siguiente imagen.
 </p>
-<img src="postEx7.png"/>
+<img src="images/postEx7.png"/>
 <p>
 La técnica de custom exceptions permite la separación entre el código de flujo de la aplicación y el código de manejo de excepciones lo que hace la aplicación cumpla con un mecanismo mínimo de calidad y sea mucho más manejable, robusta y escalable.
 </p>
 <p>
 Aqui el archivo <i>App.config</i> donde se encuentra la cadena de conexion (ConnectionString) y  se accede a su valor mediante la siguiente linea en la aplicacion y se asigna a la variable <tt>connStr</tt>.
 </p>
-<img src="Appconfig.png"/>
+<img src="images/Appconfig.png"/>
