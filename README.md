@@ -102,35 +102,9 @@ En Monodevelop o en Visual Studio creamos una aplicación de consola, como en la
 <img src="images/postEx1.png"/>
 Creamos una base de datos en <b>PostgreSQL</b> llamada curry y una tabla llamada Books que tendrá los campos como en la siguiente imagen:
 <img src="images/bookstable.png"/>
-<p>
-Aquí el Script de creación de la tabla
-</p>
-<img src="images/createtablebooks.png"/>
-<p>
 Una vez creada la base de datos y el proyecto, creamos la siguiente clase de entidad.
 </p>
 <img src="images/classBook.png"/>
-<p>
-Las clases derivadas y personalizadas que muestran con los constructores básicos del manejo de excepción.
-La clase que maneja las excepciones en base de datos
-</p>
-<img src="images/DataBaseException.png"/>
-<p>
-La clase que maneja las excepciones de la aplicación.
-</p>
-<img src="images/RuntimeException.png"/>
-<p>
-La clase de acceso a datos
-</p>
-<img src="images/BooksDataManager.png"/>
-<p>
-La clase logger que se encargara de registrar las excepciones.
-</p>
-<img src="images/Logger.png"/>
-<p>
-Por último la clase principal en donde usamos las excepciones personalizadas.
-</p>
-<img src="images/ProgramPostEx.png"/>
 <p>
 Una vez creadas estas clases dentro del proyecto la estructura se verá más o menos así en MonoDevelop
 </p>
@@ -154,7 +128,3 @@ Si hay una excepción en la aplicación se mostrará el resultado como en la sig
 <p>
 La técnica de custom exceptions permite la separación entre el código de flujo de la aplicación y el código de manejo de excepciones lo que hace la aplicación cumpla con un mecanismo mínimo de calidad y sea mucho más manejable, robusta y escalable.
 </p>
-<p>
-Aqui el archivo <i>App.config</i> donde se encuentra la cadena de conexion (ConnectionString) y  se accede a su valor mediante la siguiente linea en la aplicacion y se asigna a la variable <tt>connStr</tt>.
-</p>
-<img src="images/Appconfig.png"/>
